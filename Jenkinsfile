@@ -6,9 +6,6 @@ pipeline {
             steps {
                 echo 'Building...'
                 withGradle {
-                    sh 'apt-get update'
-                    sh 'apt-get install openjdk-21-jdk -y'
-                    sh 'chmod +x ./gradlew'
                     sh './gradlew build'
                 }
             }

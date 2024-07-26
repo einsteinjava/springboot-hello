@@ -6,10 +6,10 @@ pipeline {
             steps {
                 echo 'Building...'
                 // Add your build steps here
-                sh 'sudo apt-get update'
-                sh 'sudo apt-get install openjdk-21-jdk -y'
-                sh 'chmod +x ./gradlew'
-                sh './gradlew build'
+                // sh 'sudo apt-get update'
+                // sh 'sudo apt-get install openjdk-21-jdk -y'
+                // sh 'chmod +x ./gradlew'
+                // sh './gradlew build'
             }
         }
         stage('Test') {

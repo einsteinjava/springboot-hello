@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 // Add your build steps here
+                sh 'chmod +x ./gradlew'
                 sh './gradlew build'
             }
         }

@@ -10,6 +10,7 @@ pipeline {
                 // sh 'sudo apt-get install openjdk-21-jdk -y'
                 // sh 'chmod +x ./gradlew'
                 // sh './gradlew build'
+                sh 'gradle build'
             }
         }
         stage('Test') {
